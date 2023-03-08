@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - P & Co.</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a id="header_company" class="navbar-brand" href="#">P & Co.</a>
+                <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navmenu" 
+                    aria-controls="navmenu" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navmenu">
+                <!-- ms - margin start -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\boot.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\aboutpage2.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\contactpage4.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\housepage3.html">Find Your Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- section 1 -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div class="col-6">
+                    <h1 class="pb-3">Contact <span class="text-warning">Us</span></h1>
+                    <p class="lead my-4">
+                        We sell fully renovated houses for an affordable price and help you find your new Home! 
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Illo beatae aliquam possimus neque et aspernatur labore earum nesciunt tempora, placeat architecto sapiente. 
+                        Distinctio asperiores voluptas inventore debitis corporis veritatis quidem?
+                    </p>
+                </div>
+                <div class="col-6 ">
+                    <img class="img-fluid w-100 d-none d-sm-block ps-5"
+                    src="img/contact_us.svg"
+                    alt="contact us svg"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [mx] margin in x axis (Left & Right) [my] margin in y axis (Up & Bottom) -->
+    <section class="bg-secondary mx-4 my-4 rounded">
+        <div class="container">
+            <!-- grid column -->
+            <!-- screen size responsive small medium large xlarge -->
+            <div class="row d-sm-flex rounded">
+                <div class="col-6 my-4">
+                    <!-- inquiry form -->
+                    <!-- <div class="container"> -->
+                        <h5 class="text-light fw-bold mb-4 text-center">
+                            INQUIRY FORM
+                        </h5>
+                        <form id="form">
+                            <div class="form-control">
+                                <!-- margin bottom = mb -->
+                                <div class="text-black mb-1">
+                                    <label for="name" class="form-label">Name (required)</label>
+                                    <input type="text" id="name_form" class="form-control" placeholder="Sana Minatozaki">
+                                </div>
+                                <div id="error"></div> 
+                                <div class="text-black mb-1">
+                                    <label for="contact" class="form-label">Contact number (required)</label>
+                                    <input type="number" id="contact_form" class="form-control" placeholder="0967xxxxxxx">
+                                </div>
+                                <div id="error1"></div> 
+                                <div class="text-black mb-1">
+                                    <label for="email" class="form-label">Email (required)</label>
+                                    <input type="email" id="email_form" class="form-control" placeholder="Twice_9@gmail.com">
+                                    <!-- <div class="invalid-feedback">Invalid email</div>
+                                    <div class="valid-feedback">Correct email</div> -->
+                                </div>
+                                <div id="error2"></div> 
+                                <div class="text-black mb-2">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message_form" rows="3" placeholder="Good Day! I would like to inquire a house."></textarea>
+                                </div>
+                                <button id="submit_inquire" class="btn btn-primary btn-sm " type="submit">CLICK HERE TO SUBMIT</button>   
+                            </div>
+                        </form>
+                    <!-- </div> -->
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid w-180 ps-4 pt-4 d-sm-none d-lg-block"
+                    src="img/question_form.svg"
+                    alt="question svg"
+                    >
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+    <!-- </section>
+    <section class="bg-secondary">
+        <div class="container">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary btn-sm">Submit</button>
+        </div>
+        
+    </section> -->
+
+<script type="text/javascript" src="contact.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+<!-- IDEA: Buy and sell renovated house and unrenovated house(old house).
+acquire old properties then irenovate then ibenta sa public
+
+Header section:
+Nav bar > home, about (1page), contact us (1page), find a home button (1page)
+
+grid system (per box 1 house)
+3 box (3 col 2 row)
+3 box (3 col 2 row)
+objects js displays under enlarge house image upon click
+
+objects = name of house, location, landmark, selling price
+
+footer section:
+Inside footer display Inquiry form (user will input name, email, contact num, message)
+beside form are social media icons(fb, YT, twitter) -->

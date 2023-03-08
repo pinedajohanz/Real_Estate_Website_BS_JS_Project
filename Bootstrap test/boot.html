@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P & Co. - Your future Home awaits!</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<!-- <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a id="header_company" class="navbar-brand" href="#">P & Co.</a>
+                <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navmenu" 
+                    aria-controls="navmenu" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navmenu">
+                <!-- ms - margin start -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\boot.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\aboutpage2.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\contactpage4.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\housepage3.html">Find Your Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- section 1 -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="row d-sm-flex align-items-center justify-content-between">
+                <div class="col-6 align-items-center">
+                    <h1>Are you searching for your new <span class="text-warning">Home?</span></h1>
+                    <p class="lead my-4">
+                        We sell fully renovated houses for an affordable price and help you find your new Dream Home!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati nobis veniam totam deserunt, nostrum ratione odio mollitia saepe pariatur expedita ducimus quae aliquid quo aut, sed aperiam vero architecto laudantium!
+                    </p>
+                    <!-- JS function value = link of page/url. (this) targets the whole button tag -->
+                    <!-- button to redirect contact page -->
+                    <button onclick="go_to_contact(this)" value='D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\housepage3.html' class="btn btn-primary btn-lg">Find Your Dream Home</button>
+                </div>
+                <div class="col-6">
+                    <!-- d - display -->
+                    <img class="img-fluid w-100 d-none d-sm-block"
+                    src="img/house_search.svg"
+                    alt="house search img"
+                    >
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5">
+        <div class="container text-center bg-white shadow-lg p-3 rounded" style="border:6px solid black">
+            <h1 class="text-bg-light">SERVICES</h1>
+        </div>
+    </section>
+    <!-- Services - section 2 -->
+    <section id="service" class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-white text-dark">
+                        <div class="card-body text-center">
+                            <!-- Bootstrap icon not working <i class="bi bi-house-gear-fill"></i> -->
+                            <img class="img-fluid w-20"
+                            src="img/const_house.svg"
+                            alt="build house img"
+                            >
+                            <h3 class="card-title p-1">
+                                Renovate
+                            </h3>
+                            <p class="card-text">
+                                We offer renovation services that would be handled by our trusted contractor at a good price.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-secondary text-white">
+                        <div class="card-body text-center">
+                            <!-- Bootstrap icon not working <i class="bi bi-house-gear-fill"></i> -->
+                            <img class="img-fluid w-30"
+                            src="img/build_house.svg"
+                            alt="build house img"
+                            >
+                            <h3 class="card-title p-1">
+                                Assist Transfers
+                            </h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem adipisci, reprehenderit quod nesciunt laudantium veritatis!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-white text-dark">
+                        <div class="card-body text-center">
+                            <!-- Bootstrap icon not working <i class="bi bi-house-gear-fill"></i> -->
+                            <img class="img-fluid w-20"
+                            src="img/select_house.svg"
+                            alt="build house img"
+                            >
+                            <h3 class="card-title p-1">
+                                Search Homes
+                            </h3>
+                            <p class="card-text">
+                                We find homes that is suitable for your taste and needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer -->
+    <footer class="text-center text-lg-center bg-white text-muted">
+        <!-- Section: Social media -->
+        <!-- <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"> -->
+        <!-- left -->
+            <!-- <div class="me-5 d-none d-lg-block">
+                <span> Follow us on our social media accounts:</span>
+            </div> -->
+        <!-- left -->
+        <!-- class="me-4 link-secondary" -->
+        <!-- right -->
+        <!-- <div>
+            <a class="btn text-white" style="background-color: #3b5998;" href="https://www.facebook.com/" role="button"> 
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div> -->
+        <!-- right -->
+        <!-- </section> -->
+        <!-- section: social media -->
+
+        <!-- section: links -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- grid row -->
+                <div class="row mt-3">
+                <!-- grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>P & Co.
+
+                        </h6>
+                        <p> We sell fully renovated houses for an affordable price and help you find your new Dream Home! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati nobis veniam totam deserunt, nostrum ratione odio mollitia saepe pariatur expedita ducimus quae aliquid quo aut, sed aperiam vero architecto laudantium!</p>
+                    </div>
+                    <!-- grid column -->
+
+                    <!-- grid column -->
+                    <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"> -->
+                        <!-- form -->
+                        <!-- <h6 class="text-uppercase fw-bold mb-4">
+                            Inquiry Form
+                        </h6>
+                        <form novalidate>
+                            <div class="form-floating">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name (required)</label>
+                                    <input type="text" id="name_form" class="form-control" placeholder="Park Soo-young">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact" class="form-label">Contact number (required)</label>
+                                    <input type="number" id="contact_form" class="form-control" placeholder="Place contact here">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email (required)</label>
+                                    <input type="email" id="email_form" class="form-control" placeholder="Red_velvet@gmail.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message_form" rows="3" placeholder="Place message here"></textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-sm">Submit</button>
+                        </form>
+                    </div> -->
+                    <!-- grid column -->
+
+                    <!-- grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">FAQs</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Support</a>
+                        </p>
+                    </div>
+                    <!-- grid column -->
+
+                    <!-- grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-map-marker me-3 text-secondary"></i>Manila Philippines</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-seconday"></i>
+                            example@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-seconday"></i>+987654321</p>
+                        <p><i class="fas fa-print me-3 text-seconday"></i>+987654321</p>
+                    </div>
+                    <!-- grid column -->
+                </div>
+                <!-- grid row -->
+            </div>
+        </section>
+        <!-- section: links -->
+
+        <!-- copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            2022 Copyright:
+            <a class="text-reset fw-bold" href="https://facebook.com">P & Co.</a>
+        </div>
+        <!-- <div class="footer">
+            <div class="row">
+                <div class="footer_inquire">form here</div>
+            </div>
+            <div class="row">
+                <div class="footer_socials">icons here</div>
+            </div>
+         </div> -->
+    </footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+<!-- IDEA: Buy and sell renovated house and unrenovated house(old house).
+acquire old properties then irenovate then ibenta sa public
+
+Header section:
+Nav bar > home, about (1page), contact us (1page), find a home button (1page)
+
+grid system (per box 1 house)
+3 box (3 col 2 row)
+3 box (3 col 2 row)
+objects js displays under enlarge house image upon click
+
+objects = name of house, location, landmark, selling price
+
+footer section:
+Inside footer display Inquiry form (user will input name, email, contact num, message)
+beside form are social media icons(fb, YT, twitter) -->

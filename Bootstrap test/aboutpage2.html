@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - P & Co.</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a id="header_company" class="navbar-brand" href="#">P & Co.</a>
+                <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navmenu" 
+                    aria-controls="navmenu" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navmenu">
+                <!-- ms - margin start -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\boot.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\aboutpage2.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\contactpage4.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\housepage3.html">Find Your Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- section 1 -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="row d-sm-flex">
+                <div class="col-6">
+                    <h1>About <span class="text-warning">Us</span></h1>
+                    <p class="lead my-4">
+                        We sell fully renovated houses for an affordable price and help you find your new Home! 
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Illo beatae aliquam possimus neque et aspernatur labore earum nesciunt tempora, placeat architecto sapiente. 
+                        Distinctio asperiores voluptas inventore debitis corporis veritatis quidem?
+                    </p>
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid w-100 d-none d-sm-block"
+                    src="img/house_sale.svg"
+                    alt="house sale svg"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our team section 2-->
+    <section id="team" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">Our <span class='text-warning'>Awesome</span> Team</h2>
+            <p class="lead text-center text-white mb-5">
+                Our Awesome Team Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga optio cum sequi maiores quia iusto.
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img height="200" width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuLpXWLYytThq3dEoUhoPkwKBlR1blJtTvw&usqp=CAU"
+                            class="rounded-circle mb-3" 
+                            alt="pic1"
+                            >
+                            <h3 class="card-title mb-3">Sana Minatozaki</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi labore sapiente temporibus ut. Iste ea autem, dolor eos dicta praesentium.</p>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img height="200" width="200" src="data:image/jpeg;base64,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"
+                            class="rounded-circle mb-3" 
+                            alt="pic1"
+                            >
+                            <h3 class="card-title mb-3">Baek Jiheon</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi labore sapiente temporibus ut. Iste ea autem, dolor eos dicta praesentium.</p>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img height="200" width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4EId5zfVIPy6VQxNejR6EAi82n74o1dRQvw&usqp=CAU"
+                            class="rounded-circle mb-3" 
+                            alt="pic1"
+                            >
+                            <h3 class="card-title mb-3">Park Soo-young</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi labore sapiente temporibus ut. Iste ea autem, dolor eos dicta praesentium.</p>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img height="200" width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScw1PF49iK9bDrVwjw_g9fyrNbQwR-vngoug&usqp=CAU"
+                            class="rounded-circle mb-3" 
+                            alt="pic1"
+                            >
+                            <h3 class="card-title mb-3">Oh Hae Won</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi labore sapiente temporibus ut. Iste ea autem, dolor eos dicta praesentium.</p>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- future plan: below this line will display proof of transactions with buyers (Image slider or Image gallery JS) -->
+
+<script type="text/javascript" src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- IDEA: Buy and sell renovated house and unrenovated house(old house).
+acquire old properties then irenovate then ibenta sa public
+
+Header section:
+Nav bar > home, about (1page), contact us (1page), find a home button (1page)
+
+grid system (per box 1 house)
+3 box (3 col 2 row)
+3 box (3 col 2 row)
+objects js displays under enlarge house image upon click
+
+objects = name of house, location, landmark, selling price
+
+footer section:
+Inside footer display Inquiry form (user will input name, email, contact num, message)
+beside form are social media icons(fb, YT, twitter) -->

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Home - P & Co.</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="display">
+    <!-- nav bar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a id="header_company" class="navbar-brand" href="#">P & Co.</a>
+                <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navmenu" 
+                    aria-controls="navmenu" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navmenu">
+                <!-- ms - margin start -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\boot.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\aboutpage2.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\contactpage4.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\housepage3.html">Find Your Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <section class="p-5">
+        <div class="container text-center bg-black shadow-lg p-3 rounded">
+            <h1 class="bg-secondary text-white rounded"> <span class="text-warning">DREAM HOUSES</span> FOR SALE</h1>
+        </div>
+        
+    </section>
+    <!-- <section id="section1" class="p-5"> -->
+
+    <!-- Future objective: add image slider inside modal body (display pics inside or outside house)
+    add a button (contact us) to redirect to inquiry form in contact us page -->
+    <!-- Display only house pic upon click on pic of house redirect to modal (pop up) Display JS objects and House pic enlarge -->
+    <div class="container">
+        <div class="row row-cols-3 justify-content-between">
+            <!-- grid section -->
+            <div class="col bg-white rounded" style="border:5px solid black">
+                <!-- house pic display -->
+                <div id="house1"></div> 
+                <!-- modal (pop up) -->
+                <button class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modal1">See more</button>
+                <div class="modal fade" id="modal1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div id="house1_big"></div>
+                            </div>
+                            <div class="modal-body">
+                                <div id="house1_info"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button onclick="go_to_contact(this)" value='D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\contactpage4.html' class="btn btn-primary btn-lg">Inquire Now</button>
+                                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-black rounded" style="border:5px solid black">
+                <div id="house2"></div> 
+                <button class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modal2">See more</button>
+                <div class="modal fade" id="modal2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div id="house2_big"></div>
+                            </div>
+                            <div class="modal-body">
+                                <div id="house2_info"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button onclick="go_to_contact(this)" value='D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\contactpage4.html' class="btn btn-primary btn-lg">Inquire Now</button>
+                                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-white rounded" style="border: 5px solid black">
+                <div id="house3"></div> 
+                <button class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modal3">See more</button>
+                <div class="modal fade" id="modal3">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div id="house3_big"></div>
+                            </div>
+                            <div class="modal-body">
+                                <div id="house3_info"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button onclick="go_to_contact(this)" value='D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\contactpage4.html' class="btn btn-primary btn-lg">Inquire Now</button>
+                                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-black rounded" style="border:5px solid black">
+                <div id="house4"></div> 
+                <button class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modal4">See more</button>
+                <div class="modal fade" id="modal4">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div id="house4_big"></div>
+                            </div>
+                            <div class="modal-body">
+                                <div id="house4_info"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button onclick="go_to_contact(this)" value='D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\contactpage4.html' class="btn btn-primary btn-lg">Inquire Now</button>
+                                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-white rounded" style="border:5px solid black">
+                <div id="house5"></div> 
+                <button class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modal5">See more</button>
+                <div class="modal fade" id="modal5">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div id="house5_big"></div>
+                            </div>
+                            <div class="modal-body">
+                                <div id="house5_info"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button onclick="go_to_contact(this)" value='D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\contactpage4.html' class="btn btn-primary btn-lg">Inquire Now</button>
+                                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-black rounded" style="border:5px solid black">
+                <div id="house6"></div> 
+                <button class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modal6">See more</button>
+                <div class="modal fade" id="modal6">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div id="house6_big"></div>
+                            </div>
+                            <div class="modal-body">
+                                <div id="house6_info"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button onclick="go_to_contact(this)" value='D:\HTML Files StackEd1\HTML Files StackEd\Bootstrap test\contactpage4.html' class="btn btn-primary btn-lg">Inquire Now</button>
+                                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="col bg-white" style="border:10px solid green">Hover enlarge display image then display underneath JS objects (name of house, location, landmark, selling price) add inquiry button underneath redirect to contact us page </div> -->
+        </div>
+    </div>
+    <!-- </section> -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+<!-- IDEA: Buy and sell renovated house and unrenovated house(old house).
+acquire old properties then irenovate then ibenta sa public
+
+Header section:
+Nav bar > home, about (1page), contact us (1page), find a home button (1page)
+
+grid system (per box 1 house)
+3 box (3 col 2 row)
+3 box (3 col 2 row)
+objects js displays under enlarge house image upon click
+
+objects = name of house, location, landmark, selling price
+
+footer section:
+Inside footer display Inquiry form (user will input name, email, contact num, message)
+beside form are social media icons(fb, YT, twitter) -->
